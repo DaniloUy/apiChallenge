@@ -1,7 +1,6 @@
-let ghibliHeader = "Call Studio Ghibli APIs to get a list of films and characters";
+let ghibliHeader = "Call " + "<u>Studio Ghibli API</u>" + " to access films and characters catalog";
 let ghibliUrlLink = ghibliHeader.link("https://ghibliapi.herokuapp.com/");
 document.getElementById("headerLink").innerHTML = ghibliUrlLink;
-
 
 fetch('https://ghibliapi.herokuapp.com/films') 
 
@@ -53,5 +52,4 @@ fetch('https://ghibliapi.herokuapp.com/people')
     charactersList.appendChild(listItemC);    
   }   
 });
-
 
